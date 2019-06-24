@@ -423,7 +423,7 @@
         
           
             <p>树莓派连接公司wifi时，wifi名称显示为灰色不可连接。<br>如图所示：</p>
-<h2 id><a href="#" class="headerlink" title></a><img src="/2019/06/24/树莓派连接WPA2-Wifi/invalid-wifi.jpeg" alt></h2><p>解决方案：<br>修改wifi配置文件:</p>
+<h2 id><a href="#" class="headerlink" title></a><img src="/2019/06/24/树莓派连接WPA2-Wifi/invalid-wifi.png" alt></h2><p>解决方案：<br>修改wifi配置文件:</p>
 <h2 id="vim-etc-wpa-supplicant-wpa-supplicant-conf"><a href="#vim-etc-wpa-supplicant-wpa-supplicant-conf" class="headerlink" title="vim /etc/wpa_supplicant/wpa_supplicant.conf"></a><code>vim /etc/wpa_supplicant/wpa_supplicant.conf</code></h2><p>新增配置：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">network=&#123;</span><br><span class="line">	ssid=&quot;your_AP_name&quot;</span><br><span class="line">	key_mgmt=WPA-EAP</span><br><span class="line">	pairwise=CCMP TKIP</span><br><span class="line">	group=CCMP TKIP</span><br><span class="line">	eap=PEAP</span><br><span class="line">	identity=&quot;your_username&quot;</span><br><span class="line">	password=&quot;password&quot;</span><br><span class="line">	phase1=&quot;peaplabel=auto pepver=auto&quot;</span><br><span class="line">	phase2=&quot;MSCHAPV2&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
