@@ -298,6 +298,211 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://dongming.com/2019/06/28/github-hexo-next搭建个人博客/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Dongming">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/jarvis.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="DongMing Tech">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/06/28/github-hexo-next搭建个人博客/" itemprop="url">github+hexo+next搭建个人博客</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-28T11:40:03+08:00">
+                2019-06-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/06/28/github-hexo-next搭建个人博客/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2019/06/28/github-hexo-next搭建个人博客/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/06/28/github-hexo-next搭建个人博客/" class="leancloud_visitors" data-flag-title="github+hexo+next搭建个人博客">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+                 <span>℃</span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  150
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>使用github与hexo搭建个人blog，使用next主题</p>
+<h2 id="配置页面效果-参考文章"><a href="#配置页面效果-参考文章" class="headerlink" title="配置页面效果:参考文章"></a>配置页面效果:<a href="https://www.jianshu.com/p/9f0e90cc32c2" target="_blank" rel="noopener">参考文章</a></h2><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a><strong>常用命令</strong></h2><ul>
+<li>创建新文章<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &apos;article title&apos;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<hr>
+<ul>
+<li>重新生成并部署<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<hr>
+<ul>
+<li>本地预览<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://localhost:4000</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<hr>
+<ul>
+<li>提交<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<hr>
+<h2 id="MarkDown语法-参考文章"><a href="#MarkDown语法-参考文章" class="headerlink" title="MarkDown语法:参考文章"></a>MarkDown语法:<a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">参考文章</a></h2><p>文章中添加图片</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1.安装插件:npm install hexo-asset-image --save</span><br><span class="line">2.hexo的_config.yml中的post_asset_folder修改为true</span><br><span class="line">3.hexo n &apos;new_blog&apos;创建新文章后，会生成new_blog与new_blog.md</span><br><span class="line">4.将需要在new_blog.md中添加的图片放在new_blog目录内</span><br><span class="line">5.在new_blog.md中使用markdown语法添加图片，例如: ![](/new_blog/test.jpg)</span><br></pre></td></tr></table></figure>
+
+<hr>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    <div>
+      
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://dongming.com/2019/06/24/树莓派连接WPA2-Wifi/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -423,7 +628,7 @@
         
           
             <p>树莓派连接公司wifi时，wifi名称显示为灰色不可连接。<br>如图所示：</p>
-<h2 id><a href="#" class="headerlink" title></a><img src="/2019/06/24/树莓派连接WPA2-Wifi/invalid-wifi.png" alt></h2><p>解决方案：<br>修改wifi配置文件:</p>
+<h2 id><a href="#" class="headerlink" title></a><img src="/2019/06/24/树莓派连接WPA2-Wifi/invalid-wifi.jpg" alt></h2><p>解决方案：<br>修改wifi配置文件:</p>
 <h2 id="vim-etc-wpa-supplicant-wpa-supplicant-conf"><a href="#vim-etc-wpa-supplicant-wpa-supplicant-conf" class="headerlink" title="vim /etc/wpa_supplicant/wpa_supplicant.conf"></a><code>vim /etc/wpa_supplicant/wpa_supplicant.conf</code></h2><p>新增配置：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">network=&#123;</span><br><span class="line">	ssid=&quot;your_AP_name&quot;</span><br><span class="line">	key_mgmt=WPA-EAP</span><br><span class="line">	pairwise=CCMP TKIP</span><br><span class="line">	group=CCMP TKIP</span><br><span class="line">	eap=PEAP</span><br><span class="line">	identity=&quot;your_username&quot;</span><br><span class="line">	password=&quot;password&quot;</span><br><span class="line">	phase1=&quot;peaplabel=auto pepver=auto&quot;</span><br><span class="line">	phase2=&quot;MSCHAPV2&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -884,7 +1089,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -897,7 +1102,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -931,7 +1136,9 @@
           
           
 
-          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="//music.163.com/outchain/player?type=0&id=923613917&auto=1&height=430"></iframe>
+<!--
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=923613917&auto=1&height=430"></iframe>
+          -->
 
           
 
@@ -952,9 +1159,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <!--
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
--->
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
@@ -971,10 +1176,10 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">223</span>
+    <span title="Site words total count">373</span>
   
-</div>
 -->
+</div>
 
 
 
@@ -987,15 +1192,15 @@
 
 
 
+
+
 <!--
-
-
 
 -->
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共223字</span>
+  <span class="post-count">博客全站共373字</span>
 </div>
 <!--
 -->
@@ -1005,19 +1210,7 @@
   <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
-    <span class="site-uv">
-      <i class="fa fa-user"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-      
-    </span>
-  
 
-  
-    <span class="site-pv">
-      <i class="fa fa-eye"></i>
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-      
-    </span>
   
 </div>
 
@@ -1030,7 +1223,7 @@
 
         
       </div>
-    </div></footer>
+    </footer>
 
     
       <div class="back-to-top">
@@ -1175,7 +1368,7 @@
         notify: true,
         appId: 'wIRP1TEVc4pme9pxy3urTbMP-gzGzoHsz',
         appKey: '8iSUpyglFi8HDMCdEHrQrFWT',
-        placeholder: '😎看了这么多，不想说点什么嘛😉',
+        placeholder: '评论',
         avatar:'mm',
         guest_info:guest,
         pageSize:'10' || 10,
