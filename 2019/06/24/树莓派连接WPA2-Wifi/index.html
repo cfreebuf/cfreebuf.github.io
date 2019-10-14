@@ -81,7 +81,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://dongming.com/2019/06/24/树莓派连接WPA2-Wifi/" data-id="ck1q2v980000np6lm684oave2"
+      <a data-url="https://dongming.com/2019/06/24/树莓派连接WPA2-Wifi/" data-id="ck1q32vxv000ms9lm9vxr3kpg"
          class="article-share-link">Share</a>
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/树莓派/">树莓派</a></li></ul>
@@ -116,6 +116,26 @@
 
   
     
+  <div class="gitalk" id="gitalk-container"></div>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: '9d46fabb0c2dcd2cc3f2',
+      clientSecret: 'aa1cb25a344c0e97d83609a255dbcdc43a358282',
+      repo: 'blogposts',
+      owner: 'cfreebuf',
+      admin: ['cfreebuf'],
+      // id: location.pathname,      // Ensure uniqueness and length less than 50
+      id: md5(location.pathname),
+      distractionFreeMode: false,  // Facebook-like distraction free mode
+      pagerDirection: 'last'
+    })
+
+  gitalk.render('gitalk-container')
+  </script>
+
   
 
 </article>
