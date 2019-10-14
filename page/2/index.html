@@ -59,6 +59,73 @@
       
         
 
+<article id="post-ubuntu-18-04-修改为国内源" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
+  
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h2 itemprop="name">
+      <a class="article-title" href="/2019/06/28/ubuntu-18-04-修改为国内源/">ubuntu 18.04 修改为国内源</a>
+    </h2>
+  
+  
+
+
+
+
+      </header>
+    
+
+    
+      <div class="article-meta">
+        <a href="/2019/06/28/ubuntu-18-04-修改为国内源/" class="article-date">
+  <time datetime="2019-06-28T04:21:11.000Z" itemprop="datePublished">2019-06-28</time>
+</a>
+        
+      </div>
+    
+
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+
+
+      
+
+      
+        <p>修改/etc/apt/sources.list,在首行处添加如下配置<br>阿里源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse</span><br></pre></td></tr></table></figure>
+
+<p>更新</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get upgrade</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://dongming.com/2019/06/28/ubuntu-18-04-修改为国内源/" data-id="ck1q463fm000c05lmiiiiezdb"
+         class="article-share-link">分享</a>
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ubuntu/">ubuntu</a></li></ul>
+
+    </footer>
+
+  </div>
+
+  
+
+  
+
+</article>
+
+
+
+      
+        
+
 <article id="post-github-hexo-next搭建个人博客" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
   
   <div class="article-inner">
@@ -130,7 +197,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://dongming.com/2019/06/28/github-hexo-next搭建个人博客/" data-id="ck1q3qmuu0009vqlmz5ldlctw"
+      <a data-url="https://dongming.com/2019/06/28/github-hexo-next搭建个人博客/" data-id="ck1q463fd000205lmyy0cr7r8"
          class="article-share-link">分享</a>
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo-next/">hexo next</a></li></ul>
@@ -200,7 +267,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://dongming.com/2019/06/24/树莓派连接WPA2-Wifi/" data-id="ck1q3qmv0000lvqlm425zdser"
+      <a data-url="https://dongming.com/2019/06/24/树莓派连接WPA2-Wifi/" data-id="ck1q463fy000m05lmq4yilx91"
          class="article-share-link">分享</a>
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/树莓派/">树莓派</a></li></ul>
@@ -274,7 +341,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://dongming.com/2019/06/06/hello-world/" data-id="ck1q3qmus0008vqlmpu6nn40j"
+      <a data-url="https://dongming.com/2019/06/06/hello-world/" data-id="ck1q463fg000405lmfc0f0cz8"
          class="article-share-link">分享</a>
       
     </footer>

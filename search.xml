@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>微分与导数</title>
+    <url>/2019/10/14/%E5%BE%AE%E5%88%86%E4%B8%8E%E5%AF%BC%E6%95%B0/</url>
+    <content><![CDATA[<p>在了解机器学习相关算法的过程中，遇见了许多微积分、导数、梯度等数学相关的知识，工作多年这些知识早已还给老师，于是最近重新复习并梳理并总结一下。</p>
+<h1 id="微分与导数"><a href="#微分与导数" class="headerlink" title="微分与导数"></a>微分与导数</h1><p>TODO</p>
+<h1 id="梯度"><a href="#梯度" class="headerlink" title="梯度"></a>梯度</h1><p>TODO</p>
+<h1 id="梯度下降"><a href="#梯度下降" class="headerlink" title="梯度下降"></a>梯度下降</h1><p>TODO</p>
+]]></content>
+  </entry>
+  <entry>
     <title>docker配置阿里云镜像加速</title>
     <url>/2019/07/03/docker%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E4%BA%91%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/</url>
     <content><![CDATA[<p>docker默认镜像地址比较慢，可配置阿里云镜像加速</p>

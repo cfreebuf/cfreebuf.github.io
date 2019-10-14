@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>
-    about |
+    微分与导数 |
     
     DongMing Tech</title>
   
@@ -25,7 +25,7 @@
   <section class="outer">
   
 
-<article id="page-" class="article article-type-page" itemscope itemprop="blogPost" data-scroll-reveal>
+<article id="post-微分与导数" class="article article-type-post" itemscope itemprop="blogPost" data-scroll-reveal>
   
   <div class="article-inner">
     
@@ -33,7 +33,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      微分与导数
     </h1>
   
   
@@ -45,6 +45,21 @@
     
 
     
+      <div class="article-meta">
+        <a href="/2019/10/14/微分与导数/" class="article-date">
+  <time datetime="2019-10-14T07:39:14.000Z" itemprop="datePublished">2019-10-14</time>
+</a>
+        
+      </div>
+    
+
+    
+      
+    <div class="tocbot"></div>
+
+
+
+
 
     
 
@@ -55,12 +70,15 @@
       
 
       
-        <p>问渠哪得清如许，唯有源头活水来</p>
+        <p>在了解机器学习相关算法的过程中，遇见了许多微积分、导数、梯度等数学相关的知识，工作多年这些知识早已还给老师，于是最近重新复习并梳理并总结一下。</p>
+<h1 id="微分与导数"><a href="#微分与导数" class="headerlink" title="微分与导数"></a>微分与导数</h1><p>TODO</p>
+<h1 id="梯度"><a href="#梯度" class="headerlink" title="梯度"></a>梯度</h1><p>TODO</p>
+<h1 id="梯度下降"><a href="#梯度下降" class="headerlink" title="梯度下降"></a>梯度下降</h1><p>TODO</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://dongming.com/about/index.html" data-id="ck1q463gm000z05lm94f7nmrc"
+      <a data-url="https://dongming.com/2019/10/14/微分与导数/" data-id="ck1q463fv000i05lmpedlc1to"
          class="article-share-link">分享</a>
       
     </footer>
@@ -69,8 +87,40 @@
 
   
     
+  <nav class="article-nav">
+    
+    
+      <a href="/2019/07/03/docker配置阿里云镜像加速/" class="article-nav-link">
+        <strong class="article-nav-caption">后一篇</strong>
+        <div class="article-nav-title">docker配置阿里云镜像加速</div>
+      </a>
+    
+  </nav>
+
 
   
+
+  
+    
+  <div class="gitalk" id="gitalk-container"></div>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: '9d46fabb0c2dcd2cc3f2',
+      clientSecret: 'aa1cb25a344c0e97d83609a255dbcdc43a358282',
+      repo: 'blogposts',
+      owner: 'cfreebuf',
+      admin: ['cfreebuf'],
+      // id: location.pathname,      // Ensure uniqueness and length less than 50
+      id: md5(location.pathname),
+      distractionFreeMode: false,  // Facebook-like distraction free mode
+      pagerDirection: 'last'
+    })
+
+  gitalk.render('gitalk-container')
+  </script>
 
   
 
@@ -98,8 +148,8 @@
 
 </main>
 
-  <aside class="sidebar">
-    
+<aside class="sidebar sidebar-specter">
+  
     <button class="navbar-toggle"></button>
 <nav class="navbar">
   
@@ -164,6 +214,21 @@
   <script src="/fancybox/jquery.fancybox.min.js"></script>
 
 
+
+  <script src="/js/tocbot.min.js"></script>
+  <script>
+    // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+    tocbot.init({
+      tocSelector: '.tocbot',
+      contentSelector: '.article-entry',
+      headingSelector: 'h1, h2, h3, h4, h5, h6',
+      hasInnerContainers: true,
+      scrollSmooth: true,
+      positionFixedSelector: '.tocbot',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  </script>
 
 
 <script src="/js/ocean.js"></script>
