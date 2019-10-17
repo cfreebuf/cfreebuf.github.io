@@ -5,21 +5,46 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://dongming.com/"/>
-  <updated>2019-10-15T04:07:33.914Z</updated>
-  <id>https://dongming.com/</id>
+  <link href="https://dongmingtech.com/"/>
+  <updated>2019-10-15T10:10:09.557Z</updated>
+  <id>https://dongmingtech.com/</id>
   
   <author>
-    <name>Dongming</name>
+    <name>Dongming.Li</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>机器学习算法综述</title>
+    <link href="https://dongmingtech.com/2019/10/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%BB%BC%E8%BF%B0/"/>
+    <id>https://dongmingtech.com/2019/10/15/机器学习算法综述/</id>
+    <published>2019-10-15T06:43:49.000Z</published>
+    <updated>2019-10-15T10:10:09.557Z</updated>
+    
+    <content type="html"><![CDATA[<p>梳理并总结机器学习相关的基础知识、算法原理等。</p><h1 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h1><p>线性回归算法的作用是，找到大量数据在二维平面中的线性关系</p><h2 id="假设算法模型："><a href="#假设算法模型：" class="headerlink" title="假设算法模型："></a>假设算法模型：</h2><p><img src="/2019/10/15/机器学习算法综述/liner.png" alt></p><h2 id="损失函数："><a href="#损失函数：" class="headerlink" title="损失函数："></a>损失函数：</h2><p>y为真实值，用真实值与算法计算的值之间的误差，来评估算法的合适程度<br><img src="/2019/10/15/机器学习算法综述/liner_e.png" alt><br>用最小二乘的方法来构建平方差函数,来表示模型预测的准确程度<br>即loss越小，算法的效果越好<br><img src="/2019/10/15/机器学习算法综述/liner_loss.png" alt></p><h2 id="梯度下降"><a href="#梯度下降" class="headerlink" title="梯度下降"></a>梯度下降</h2><p>于是问题变变成了确定损失函数Loss最小值的问题，用梯度下降的方法，逐渐找到loss的最小值</p><h1 id="逻辑回归"><a href="#逻辑回归" class="headerlink" title="逻辑回归"></a>逻辑回归</h1><p>二元分类问题中，输出结果只有两种，即”是”或者”否”，在(0,1)区间内，设置阈值p=0.5，大于p表示“是”，反之为“否”<br>此时p可以理解成为概率，即输出为“是”或“否”的概率。应用场景比如判断是否为垃圾邮件，广告中的ctr预估等。<br>线性回归的输出值并不在(0,1)区间，所以无法直接用作分类。</p><h2 id="逻辑回归模型"><a href="#逻辑回归模型" class="headerlink" title="逻辑回归模型"></a>逻辑回归模型</h2><p>逻辑回归是在线性回归的基础上，增加了一个非线性函数，比如sigmoid函数，使得输出值在(0,1)区间内。<br>TODO</p><p>#</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;梳理并总结机器学习相关的基础知识、算法原理等。&lt;/p&gt;
+&lt;h1 id=&quot;线性回归&quot;&gt;&lt;a href=&quot;#线性回归&quot; class=&quot;headerlink&quot; title=&quot;线性回归&quot;&gt;&lt;/a&gt;线性回归&lt;/h1&gt;&lt;p&gt;线性回归算法的作用是，找到大量数据在二维平面中的线性关系&lt;/p
+      
+    
+    </summary>
+    
+    
+    
+      <category term="ai" scheme="https://dongmingtech.com/tags/ai/"/>
+    
+  </entry>
+  
+  <entry>
     <title>微分与导数</title>
-    <link href="https://dongming.com/2019/10/14/%E5%BE%AE%E5%88%86%E4%B8%8E%E5%AF%BC%E6%95%B0/"/>
-    <id>https://dongming.com/2019/10/14/微分与导数/</id>
+    <link href="https://dongmingtech.com/2019/10/14/%E5%BE%AE%E5%88%86%E4%B8%8E%E5%AF%BC%E6%95%B0/"/>
+    <id>https://dongmingtech.com/2019/10/14/微分与导数/</id>
     <published>2019-10-14T03:57:07.000Z</published>
     <updated>2019-10-15T04:07:33.914Z</updated>
     
@@ -37,14 +62,14 @@
     
     
     
-      <category term="math" scheme="https://dongming.com/tags/math/"/>
+      <category term="math" scheme="https://dongmingtech.com/tags/math/"/>
     
   </entry>
   
   <entry>
     <title>docker配置阿里云镜像加速</title>
-    <link href="https://dongming.com/2019/07/03/docker%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E4%BA%91%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/"/>
-    <id>https://dongming.com/2019/07/03/docker配置阿里云镜像加速/</id>
+    <link href="https://dongmingtech.com/2019/07/03/docker%E9%85%8D%E7%BD%AE%E9%98%BF%E9%87%8C%E4%BA%91%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/"/>
+    <id>https://dongmingtech.com/2019/07/03/docker配置阿里云镜像加速/</id>
     <published>2019-07-02T18:35:02.000Z</published>
     <updated>2019-07-02T18:39:04.251Z</updated>
     
@@ -63,14 +88,14 @@
     
     
     
-      <category term="docker aliyun 镜像加速" scheme="https://dongming.com/tags/docker-aliyun-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/"/>
+      <category term="docker aliyun 镜像加速" scheme="https://dongmingtech.com/tags/docker-aliyun-%E9%95%9C%E5%83%8F%E5%8A%A0%E9%80%9F/"/>
     
   </entry>
   
   <entry>
     <title>rpi+crazyflie+kubeedge example</title>
-    <link href="https://dongming.com/2019/07/03/rpi-crazyflie-kubeedge-example/"/>
-    <id>https://dongming.com/2019/07/03/rpi-crazyflie-kubeedge-example/</id>
+    <link href="https://dongmingtech.com/2019/07/03/rpi-crazyflie-kubeedge-example/"/>
+    <id>https://dongmingtech.com/2019/07/03/rpi-crazyflie-kubeedge-example/</id>
     <published>2019-07-02T18:18:11.000Z</published>
     <updated>2019-07-02T18:29:26.480Z</updated>
     
@@ -90,14 +115,14 @@
     
     
     
-      <category term="树莓派 crazyflie kubeedge" scheme="https://dongming.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE-crazyflie-kubeedge/"/>
+      <category term="树莓派 crazyflie kubeedge" scheme="https://dongmingtech.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE-crazyflie-kubeedge/"/>
     
   </entry>
   
   <entry>
     <title>ubuntu18.04更新阿里源</title>
-    <link href="https://dongming.com/2019/07/02/ubuntu18-04%E6%9B%B4%E6%96%B0%E9%98%BF%E9%87%8C%E6%BA%90/"/>
-    <id>https://dongming.com/2019/07/02/ubuntu18-04更新阿里源/</id>
+    <link href="https://dongmingtech.com/2019/07/02/ubuntu18-04%E6%9B%B4%E6%96%B0%E9%98%BF%E9%87%8C%E6%BA%90/"/>
+    <id>https://dongmingtech.com/2019/07/02/ubuntu18-04更新阿里源/</id>
     <published>2019-07-02T13:57:00.000Z</published>
     <updated>2019-07-02T13:57:59.306Z</updated>
     
@@ -115,14 +140,14 @@
     
     
     
-      <category term="ubuntu" scheme="https://dongming.com/tags/ubuntu/"/>
+      <category term="ubuntu" scheme="https://dongmingtech.com/tags/ubuntu/"/>
     
   </entry>
   
   <entry>
     <title>mac+iterm2+ssh连接容易断开</title>
-    <link href="https://dongming.com/2019/07/02/mac-iterm2-ssh%E8%BF%9E%E6%8E%A5%E5%AE%B9%E6%98%93%E6%96%AD%E5%BC%80/"/>
-    <id>https://dongming.com/2019/07/02/mac-iterm2-ssh连接容易断开/</id>
+    <link href="https://dongmingtech.com/2019/07/02/mac-iterm2-ssh%E8%BF%9E%E6%8E%A5%E5%AE%B9%E6%98%93%E6%96%AD%E5%BC%80/"/>
+    <id>https://dongmingtech.com/2019/07/02/mac-iterm2-ssh连接容易断开/</id>
     <published>2019-07-02T06:03:24.000Z</published>
     <updated>2019-07-02T06:06:14.163Z</updated>
     
@@ -140,14 +165,14 @@
     
     
     
-      <category term="mac,ssh,linux" scheme="https://dongming.com/tags/mac-ssh-linux/"/>
+      <category term="mac,ssh,linux" scheme="https://dongmingtech.com/tags/mac-ssh-linux/"/>
     
   </entry>
   
   <entry>
     <title>max+iterm2+ssh连接容易断开</title>
-    <link href="https://dongming.com/2019/07/02/max-iterm2-ssh%E8%BF%9E%E6%8E%A5%E5%AE%B9%E6%98%93%E6%96%AD%E5%BC%80/"/>
-    <id>https://dongming.com/2019/07/02/max-iterm2-ssh连接容易断开/</id>
+    <link href="https://dongmingtech.com/2019/07/02/max-iterm2-ssh%E8%BF%9E%E6%8E%A5%E5%AE%B9%E6%98%93%E6%96%AD%E5%BC%80/"/>
+    <id>https://dongmingtech.com/2019/07/02/max-iterm2-ssh连接容易断开/</id>
     <published>2019-07-02T06:03:08.000Z</published>
     <updated>2019-07-02T06:03:08.272Z</updated>
     
@@ -161,8 +186,8 @@
   
   <entry>
     <title>树莓派更新源</title>
-    <link href="https://dongming.com/2019/07/02/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9B%B4%E6%96%B0%E6%BA%90/"/>
-    <id>https://dongming.com/2019/07/02/树莓派更新源/</id>
+    <link href="https://dongmingtech.com/2019/07/02/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%9B%B4%E6%96%B0%E6%BA%90/"/>
+    <id>https://dongmingtech.com/2019/07/02/树莓派更新源/</id>
     <published>2019-07-02T03:57:07.000Z</published>
     <updated>2019-07-02T05:21:27.184Z</updated>
     
@@ -182,14 +207,14 @@
     
     
     
-      <category term="树莓派" scheme="https://dongming.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+      <category term="树莓派" scheme="https://dongmingtech.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
     
   </entry>
   
   <entry>
     <title>基于已有镜像制作自己的Docker镜像</title>
-    <link href="https://dongming.com/2019/06/28/%E5%9F%BA%E4%BA%8E%E5%B7%B2%E6%9C%89%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C%E8%87%AA%E5%B7%B1%E7%9A%84Docker%E9%95%9C%E5%83%8F/"/>
-    <id>https://dongming.com/2019/06/28/基于已有镜像制作自己的Docker镜像/</id>
+    <link href="https://dongmingtech.com/2019/06/28/%E5%9F%BA%E4%BA%8E%E5%B7%B2%E6%9C%89%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C%E8%87%AA%E5%B7%B1%E7%9A%84Docker%E9%95%9C%E5%83%8F/"/>
+    <id>https://dongmingtech.com/2019/06/28/基于已有镜像制作自己的Docker镜像/</id>
     <published>2019-06-28T07:00:02.000Z</published>
     <updated>2019-06-28T07:09:16.715Z</updated>
     
@@ -209,14 +234,14 @@
     
     
     
-      <category term="Docker" scheme="https://dongming.com/tags/Docker/"/>
+      <category term="Docker" scheme="https://dongmingtech.com/tags/Docker/"/>
     
   </entry>
   
   <entry>
     <title>about</title>
-    <link href="https://dongming.com/2019/06/28/about/"/>
-    <id>https://dongming.com/2019/06/28/about/</id>
+    <link href="https://dongmingtech.com/2019/06/28/about/"/>
+    <id>https://dongmingtech.com/2019/06/28/about/</id>
     <published>2019-06-28T06:37:50.000Z</published>
     <updated>2019-06-28T06:37:50.138Z</updated>
     
@@ -230,8 +255,8 @@
   
   <entry>
     <title>基于vundle插件配置vim</title>
-    <link href="https://dongming.com/2019/06/28/%E5%9F%BA%E4%BA%8Evundle%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AEvim/"/>
-    <id>https://dongming.com/2019/06/28/基于vundle插件配置vim/</id>
+    <link href="https://dongmingtech.com/2019/06/28/%E5%9F%BA%E4%BA%8Evundle%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AEvim/"/>
+    <id>https://dongmingtech.com/2019/06/28/基于vundle插件配置vim/</id>
     <published>2019-06-28T04:26:37.000Z</published>
     <updated>2019-06-28T06:27:17.087Z</updated>
     
@@ -249,14 +274,14 @@
     
     
     
-      <category term="vim" scheme="https://dongming.com/tags/vim/"/>
+      <category term="vim" scheme="https://dongmingtech.com/tags/vim/"/>
     
   </entry>
   
   <entry>
     <title>ubuntu 18.04 修改为国内源</title>
-    <link href="https://dongming.com/2019/06/28/ubuntu-18-04-%E4%BF%AE%E6%94%B9%E4%B8%BA%E5%9B%BD%E5%86%85%E6%BA%90/"/>
-    <id>https://dongming.com/2019/06/28/ubuntu-18-04-修改为国内源/</id>
+    <link href="https://dongmingtech.com/2019/06/28/ubuntu-18-04-%E4%BF%AE%E6%94%B9%E4%B8%BA%E5%9B%BD%E5%86%85%E6%BA%90/"/>
+    <id>https://dongmingtech.com/2019/06/28/ubuntu-18-04-修改为国内源/</id>
     <published>2019-06-28T04:21:11.000Z</published>
     <updated>2019-06-28T04:24:22.431Z</updated>
     
@@ -274,14 +299,14 @@
     
     
     
-      <category term="ubuntu" scheme="https://dongming.com/tags/ubuntu/"/>
+      <category term="ubuntu" scheme="https://dongmingtech.com/tags/ubuntu/"/>
     
   </entry>
   
   <entry>
     <title>github+hexo+next搭建个人博客</title>
-    <link href="https://dongming.com/2019/06/28/github-hexo-next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://dongming.com/2019/06/28/github-hexo-next搭建个人博客/</id>
+    <link href="https://dongmingtech.com/2019/06/28/github-hexo-next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://dongmingtech.com/2019/06/28/github-hexo-next搭建个人博客/</id>
     <published>2019-06-28T03:40:03.000Z</published>
     <updated>2019-06-28T04:07:32.406Z</updated>
     
@@ -299,14 +324,14 @@
     
     
     
-      <category term="hexo next" scheme="https://dongming.com/tags/hexo-next/"/>
+      <category term="hexo next" scheme="https://dongmingtech.com/tags/hexo-next/"/>
     
   </entry>
   
   <entry>
     <title>树莓派连接WPA2 Wifi</title>
-    <link href="https://dongming.com/2019/06/24/%E6%A0%91%E8%8E%93%E6%B4%BE%E8%BF%9E%E6%8E%A5WPA2-Wifi/"/>
-    <id>https://dongming.com/2019/06/24/树莓派连接WPA2-Wifi/</id>
+    <link href="https://dongmingtech.com/2019/06/24/%E6%A0%91%E8%8E%93%E6%B4%BE%E8%BF%9E%E6%8E%A5WPA2-Wifi/"/>
+    <id>https://dongmingtech.com/2019/06/24/树莓派连接WPA2-Wifi/</id>
     <published>2019-06-24T06:02:37.000Z</published>
     <updated>2019-06-28T06:32:11.133Z</updated>
     
@@ -325,14 +350,14 @@
     
     
     
-      <category term="树莓派" scheme="https://dongming.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+      <category term="树莓派" scheme="https://dongmingtech.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="https://dongming.com/2019/06/06/hello-world/"/>
-    <id>https://dongming.com/2019/06/06/hello-world/</id>
+    <link href="https://dongmingtech.com/2019/06/06/hello-world/"/>
+    <id>https://dongmingtech.com/2019/06/06/hello-world/</id>
     <published>2019-06-06T06:11:10.523Z</published>
     <updated>2019-06-06T06:11:10.524Z</updated>
     
