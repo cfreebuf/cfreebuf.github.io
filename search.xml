@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo中支持MathJAX</title>
+    <url>/2019/10/17/Hexo%E4%B8%AD%E6%94%AF%E6%8C%81MathJAX/</url>
+    <content><![CDATA[<p>在Hexo中用Latex书写数学公式的方法：</p>
+<h1 id="Using-Kramed"><a href="#Using-Kramed" class="headerlink" title="Using Kramed"></a>Using Kramed</h1><p>‘’’<br>npm uninstall hexo-renderer-marked —save<br>npm install hexo-renderer-kramed —save<br>‘’’</p>
+<h1 id="Modify-kramed"><a href="#Modify-kramed" class="headerlink" title="Modify kramed"></a>Modify kramed</h1><h2 id="修改kramed-format"><a href="#修改kramed-format" class="headerlink" title="修改kramed format"></a>修改kramed format</h2><p>修改文件node_modules/hexo-renderer-kramed/lib/renderer.js<br>‘’’<br>// Change inline math rule<br>function formatText(text) {<br>    // Fit kramed’s rule: <script type="math/tex">+ \1 +</script><br>    return text.replace(/<code>\$(.*?)\$</code>/g, ‘$$$$$1$$$$’);<br>}<br>‘’’<br>修改为：<br>‘’’<br>// Change inline math rule<br>function formatText(text) {<br>    return text;<br>}<br>‘’’</p>
+<h2 id="修改kfamed-escape"><a href="#修改kfamed-escape" class="headerlink" title="修改kfamed escape"></a>修改kfamed escape</h2><p>修改文件：node_modules/kramed/lib/rules/inline.js<br>第11行：<br>‘’’<br>// escape: /^\([\`<em>{}[]()#$+-.!_&gt;])/,<br>escape: /^\([`</em>[]()#$+-.!_&gt;])/<br>‘’’<br>第20行：<br>‘’’<br>// em: /^\b_((?:__|[\s\S])+?)_\b|^*((?:**|[\s\S])+?)*(?!*)/,<br>em: /^*((?:**|[\s\S])+?)*(?!*)/<br>‘’’</p>
+<h1 id="Replace-math-with-mathjax"><a href="#Replace-math-with-mathjax" class="headerlink" title="Replace math with mathjax"></a>Replace math with mathjax</h1><p>‘’’<br>npm uninstall hexo-math —save<br>npm install hexo-renderer-mathjax —save<br>‘’’</p>
+<h1 id="Modify-MathJAX"><a href="#Modify-MathJAX" class="headerlink" title="Modify MathJAX"></a>Modify MathJAX</h1><p>修改文件：node_modules/hexo-renderer-mathjax/mathjax.html</p>
+<p><script>修改为:<br>‘’’</p>
+<p><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><br>‘’’</p>
+<h1 id="Enable-MathJAX"><a href="#Enable-MathJAX" class="headerlink" title="Enable MathJAX"></a>Enable MathJAX</h1><p>在_config.yml 或themes/*/_config.yml中修改或增加：<br>‘’’</p>
+<h1 id="MathJax-Support"><a href="#MathJax-Support" class="headerlink" title="MathJax Support"></a>MathJax Support</h1><p>mathjax:<br>  enable: true<br>  per_page: true<br>‘’’<br>在文章的头部打开开关，例如：</p>
+<h2 id="‘’’"><a href="#‘’’" class="headerlink" title="‘’’"></a>‘’’</h2><p>title: index.html<br>date: 2016-12-28 21:01:30<br>tags:</p>
+<h2 id="mathjax-true"><a href="#mathjax-true" class="headerlink" title="mathjax: true"></a>mathjax: true</h2><p>‘’’</p>
+<h1 id="Enjoy"><a href="#Enjoy" class="headerlink" title="Enjoy"></a>Enjoy</h1>]]></content>
+  </entry>
+  <entry>
     <title>机器学习算法综述</title>
     <url>/2019/10/15/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E7%BB%BC%E8%BF%B0/</url>
     <content><![CDATA[<p>梳理并总结机器学习相关的基础知识、算法原理等。</p>
